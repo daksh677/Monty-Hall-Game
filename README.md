@@ -35,8 +35,23 @@ __Running the Code:__
 
 __Understanding the Code:__
 
-- The simulation code is structured to run the Monty Hall Problem simulation and generate surface plots illustrating the probability ratios for different configurations of n and k.
-- The Tkinter GUI allows users to input parameters and visualize the results interactively.
+1. __simulate(n, k, samples):__
+
+- This function simulates the Monty Hall Problem for a given number of doors (n) and a given number of doors with cars (k). It runs the simulation for a specified number of samples and calculates the probability of winning for both switching and sticking strategies. It returns the probabilities of winning for switching and sticking.
+
+2. __run_simulation():__
+
+- This function is called when the user clicks the "Run Simulation" button in the Tkinter GUI. It reads the values entered by the user for the number of doors (n), the number of doors with cars (k), and the number of samples. Then, it calls the simulate function to run the simulation with these parameters. Finally, it updates the Tkinter labels to display the results of the simulation.
+
+3. __plot_simulation():__
+
+- This function generates surface plots illustrating the probability ratios for different configurations of n and k. It uses matplotlib to create the plots and numpy to calculate the probability ratios. It plots the probability ratios for varying values of n (number of doors) and k (number of doors with cars) on two separate subplots.
+
+4. __mainloop():__
+
+- This function starts the Tkinter event loop, which listens for events such as button clicks and updates to the GUI elements. It keeps the GUI responsive and interactive.
+  
+- These functions work together to simulate the Monty Hall Problem, display the results in the Tkinter GUI, and generate surface plots to visualize the probability ratios.
 
 __Output:__
 
